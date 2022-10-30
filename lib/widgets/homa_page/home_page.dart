@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_recipt/utilities/mediaSize/mediaSize.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,6 +11,17 @@ class HomePage extends StatefulWidget {
 class _Home extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    Widget headerContent() {
+      return Container();
+    }
+
+    SizeConfig().init(context);
+    return Scaffold(
+      body: Column(
+        children: [
+          headerContent(),
+        ],
+      ),
+    );
   }
 }
