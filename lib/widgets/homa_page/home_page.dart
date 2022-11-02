@@ -15,6 +15,10 @@ class _Home extends State<HomePage> {
       return Container();
     }
 
+    Widget contentIsi() {
+      return Container();
+    }
+
     SizeConfig().init(context);
     return Scaffold(
       body: Column(
