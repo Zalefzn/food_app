@@ -12,10 +12,8 @@ class SplashScreen extends StatefulWidget {
 class _Screen extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(
-        const Duration(milliseconds: 500),
-        () => Navigator.pushNamedAndRemoveUntil(
-            context, '/banner', (route) => false));
+    Future.delayed(const Duration(seconds: 5),
+        () => Navigator.pushNamed(context, '/banner'));
     SizeConfig().init(context);
     return Scaffold(
         backgroundColor: Colors.white,

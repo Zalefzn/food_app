@@ -40,27 +40,29 @@ class _Banner extends State<BannerPage> {
     }
 
     Widget button() {
-      return Material(
-        elevation: 10,
-        borderRadius: BorderRadius.circular(30),
-        child: Container(
-            height: SizeConfig.blockVertical * 7,
-            width: SizeConfig.blockHorizontal * 70,
-            decoration: BoxDecoration(
-                color: color1, borderRadius: BorderRadius.circular(30)),
-            child: TextButton(
-                onPressed: () {
-                  setState(() {
-                    Navigator.pushNamedAndRemoveUntil(
-                        context, '/loginPage', (route) => false);
-                  });
-                },
-                child: Text('Login',
-                    style: TextStyle(
-                        color: color2,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold)))),
-      );
+      return Container(
+          height: SizeConfig.blockVertical * 7,
+          width: SizeConfig.blockHorizontal * 70,
+          decoration: BoxDecoration(boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: Offset(0, 4),
+            ),
+          ], color: color1, borderRadius: BorderRadius.circular(30)),
+          child: TextButton(
+              onPressed: () {
+                setState(() {
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, '/loginPage', (route) => false);
+                });
+              },
+              child: Text('Next',
+                  style: TextStyle(
+                      color: color2,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold))));
     }
 
     SizeConfig().init(context);
