@@ -73,7 +73,7 @@ class _Login extends State<LoginPage> {
               onPressed: () {
                 setState(() {
                   Navigator.pushNamedAndRemoveUntil(
-                      context, '/homePage', (route) => false);
+                      context, '/tablePage', (route) => false);
                 });
               },
               child: Text('Login',

@@ -5,6 +5,7 @@ import 'package:food_recipt/widgets/homa_page/home_page.dart';
 import 'package:food_recipt/widgets/login_page/loginPage.dart';
 
 import 'widgets/register_page/registerPage.dart';
+import 'widgets/table_page/tablePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       '/banner': (context) => const BannerPage(),
       '/loginPage': (context) => const LoginPage(),
       '/registerPage': (context) => const RegisterPage(),
-      '/homePage': (context) => const HomePage()
+      '/homePage': (context) => const HomePage(),
+      '/tablePage': (context) => const TablePage(),
     });
   }
 }

@@ -22,9 +22,7 @@ class _Home extends State<HomePage> {
     SizeConfig().init(context);
     return Scaffold(
       body: Column(
-        children: [
-          headerContent(),
-        ],
+        children: [headerContent(), contentIsi()],
       ),
     );
   }
