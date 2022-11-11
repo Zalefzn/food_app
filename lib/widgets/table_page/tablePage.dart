@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipt/screen/searchForm.dart';
+import 'package:food_recipt/screen/table.dart';
 import 'package:food_recipt/utilities/mediaSize/mediaSize.dart';
 import 'package:food_recipt/utilities/theme/theme.dart';
 
@@ -12,6 +13,7 @@ class TablePage extends StatefulWidget {
 
 class _Table extends State<TablePage> {
   TextEditingController controller = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     Widget headerContent() {
@@ -69,7 +71,32 @@ class _Table extends State<TablePage> {
     }
 
     Widget contentPage() {
-      return Container();
+      return Center(
+        child: Container(
+          margin: EdgeInsets.only(top: SizeConfig.blockVertical * 30),
+          height: SizeConfig.blockVertical * 65,
+          width: SizeConfig.blockHorizontal * 90,
+          child: GridView.count(
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            crossAxisCount: 2,
+            children: const [
+              TableList('table 1'),
+              TableList('table 2'),
+              TableList('table 3'),
+              TableList('table 4'),
+              TableList('table 5'),
+              TableList('table 6'),
+              TableList('table 7'),
+              TableList('table 8'),
+              TableList('table 9'),
+              TableList('table 10'),
+              TableList('table 11'),
+              TableList('table 12'),
+            ],
+          ),
+        ),
+      );
     }
 
     SizeConfig().init(context);
