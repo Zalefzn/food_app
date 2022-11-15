@@ -27,7 +27,7 @@ class _Table extends State<TableList> {
               color: Colors.grey.shade300),
           child: Center(
               child: Text(widget.text,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.bold)))),
