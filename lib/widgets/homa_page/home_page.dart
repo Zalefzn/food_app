@@ -12,7 +12,14 @@ class _Home extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Widget headerContent() {
-      return Container();
+      return Container(
+        margin: EdgeInsets.only(top: SizeConfig.blockVertical * 40),
+        child: Center(
+            child: Text('Hallo',
+                style: TextStyle(
+                  fontSize: 50,
+                ))),
+      );
     }
 
     Widget contentIsi() {
@@ -20,9 +27,11 @@ class _Home extends State<HomePage> {
     }
 
     SizeConfig().init(context);
-    return Scaffold(
-      body: Column(
-        children: [headerContent(), contentIsi()],
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [headerContent(), contentIsi()],
+        ),
       ),
     );
   }
