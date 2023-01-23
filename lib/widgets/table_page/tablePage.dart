@@ -70,6 +70,7 @@ class _Table extends State<TablePage> {
           ));
     }
 
+
     Widget contentPage() {
       return Center(
         child: Container(

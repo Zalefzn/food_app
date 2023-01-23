@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:food_recipt/api/categoryApi.dart';
 import 'package:food_recipt/models/category_model.dart';
 
 class CategoryProvider with ChangeNotifier {
@@ -11,7 +10,7 @@ class CategoryProvider with ChangeNotifier {
     _category = category;
     notifyListeners();
   }
-
+  
   setProducts(CategoryModel model) {
     if (!isWishProduct(model)) {
       _category.add(model);

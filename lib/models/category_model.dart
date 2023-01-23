@@ -1,10 +1,8 @@
-import 'package:flutter/material.dart';
-
 class CategoryModel {
-  late String? idCategory;
-  late String? categoryFood;
-  late String? pictThumb;
-  late String? description;
+  late String idCategory;
+  late String categoryFood;
+  late String pictThumb;
+  late String description;
 
   CategoryModel(
       this.idCategory, this.categoryFood, this.description, this.pictThumb);
