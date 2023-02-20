@@ -124,15 +124,6 @@ class _Home extends State<HomePage> {
             children: categoryProvider.getCategory
                 .map((category) => CardModel(category))
                 .toList(),
-            // children: const [
-            //   CardModel(),
-            //   CardModel(),
-            //   CardModel(),
-            //   CardModel(),
-            //   CardModel(),
-            //   CardModel(),
-            //   CardModel(),
-            // ],
           ),
         ),
       );

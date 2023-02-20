@@ -30,14 +30,18 @@ class _Card extends State<CardModel> {
           children: [
             Container(
               margin: EdgeInsets.only(left: SizeConfig.blockHorizontal * 2),
-              height: 95,
-              width: 95,
+              height: 100,
+              width: 100,
               decoration: BoxDecoration(
-                  color: Colors.blue,
-                  image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: NetworkImage(widget.category.pictThumb)),
-                  borderRadius: BorderRadius.circular(50)),
+                image: DecorationImage(
+                    image: NetworkImage(widget.category.pictThumb)),
+              ),
+            ),
+            Container(
+              
+              child: Column(
+                children: [],
+              )
             ),
           ],
         ),
